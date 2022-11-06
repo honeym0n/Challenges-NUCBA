@@ -126,7 +126,8 @@ input {
     border-radius: 2rem;
   }
 
-  p, label {
+  p,
+  label {
     font-size: 1.4rem;
   }
 
