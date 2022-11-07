@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Tania";
+    src: url(./fuentes/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Tania2";
+    src: url(./fuentes/Poppins-Light.ttf);
+}
+
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --morado1: #203774;
+    --morado2: #4868bd;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Tania";
+}
+
+.contenedor {
+    background-color: var(--blanco);
+    width: 35rem;
+    height: 75rem;
+    margin: auto;
+    border-radius: 1rem;   
+     
+}
+
+.registro {
+    background-color: var(--morado1);
+    color: var(--blanco);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.fecha h2 {
+    margin-bottom: .1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.fecha p, p{
+    display: flex;
+    justify-content: center;
+}
+
+.fecha .iconos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.odontologia-1,
+.odontologia-2 {
+    padding: 2rem;
+    margin: 3rem auto;
+    width:25rem;
+    background-color: var(--morado1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--blanco);
+    border-radius: 1.3rem;
+}
+
+.odontologia-1 h2,
+.odontologia-2 h2, 
+p {
+    margin: 0;
+}
+
+img {
+    width: 10rem;
+    margin: 1rem;
+}
+
+button {
+    background-color: var(--blanco);
+    font-family: "Tania";
+    border: none;
+    border-radius: .6rem;
+    padding: .5rem;
+    transition: 0.4s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Media Queries*/
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        justify-content: flex-start; 
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    img {
+        width: 4rem; 
+        
+    }
+
+    .contenedor {
+        width: 80rem;
+        height: 70rem;
+    }
+
+    .odontologia-1,
+    .odontologia-2 {
+        padding: 3rem;
+        width: 50rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .1fr .3fr 1fr;
+    }
+
+    
+
+    .junto {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    button {
+        padding: 1.3rem;
+        grid-column: 3 / 4;
+    }
+
+    
+
+   
+    
+
+    
+}
+
+
+
+
+
